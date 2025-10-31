@@ -1,0 +1,18 @@
+{
+  "name": "sri-maheswara-catering",
+  "version": "1.0.0",
+  "description": "Catering website with MongoDB contact form",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongoose": "^7.8.7"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

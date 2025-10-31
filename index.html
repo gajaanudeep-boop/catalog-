@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRI MAHESWARA CATERING SERVICES</title>
+
+  <style>
+    /* ===== GLOBAL STYLES ===== */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffef5;
+      color: #333;
+    }
+
+    h1, h2, h3 
+    {
+      margin: 0;
+    }
+
+    a
+    {
+      text-decoration: none;
+    }
+
+    .btn {
+      background-color: #0059ff;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e68a00;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      background-color:   #0059ff;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-size: 1.2em;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .navbar .logo img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+
+    .navbar nav a {
+      color: white;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .navbar nav a:hover,
+    .navbar nav .active {
+      text-decoration: underline;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      background: url('images/vecteezy_traditional-south-indian-masala-dosa-on-plate_60804598.jpg') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; 
+      left: 0;
+      width: 100%; 
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    .hero-text {
+      z-index: 1;
+      position: relative;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    /* ===== ABOUT SECTION ===== */
+    .about {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 280px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #ff9800;
+    }
+
+    /* ===== MENU PREVIEW ===== */
+    .menu-preview {
+      text-align: center;
+      padding: 60px 20px;
+      background: #fff7e6;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .menu-item img {
+      width: 250px;
+      height: 180px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-item h3 {
+      margin-top: 10px;
+      color: #333;
+    }
+
+          
+
+    .contact-details {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      background: #fff3cd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      width: 80%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact-details h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .contact-details p {
+      margin: 5px 0;
+      color: #555;
+      font-size: 15px;
+    }
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: #1e3c72;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    /* ===== RESPONSIVE DESIGN ===== */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .navbar nav a {
+        margin: 10px;
+      }
+
+      .hero h2 {
+        font-size: 2em;
+      }
+
+      .about-content,
+      .menu-items {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card, .menu-item img {
+        width: 90%;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="/images/catering-logo-with-plate-and-spoon-fork-vector-53227458.avif" alt="Logo">
+      <span>SRI MAHESWARA CATERING SERVICES</span>
+    </div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contacts.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Delicious Food, Divine Taste!</h2>
+      <p>We serve authentic South Indian and North Indian delicacies for all occasions — weddings, functions, and corporate events.</p>
+      <a href="contacts.html" class="btn">Book Your Catering Now</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <h2>Why Choose Us?</h2>
+    <div class="about-content">
+      <div class="card">
+        <h3>🥗 Fresh Ingredients</h3>
+        <p>Every dish is prepared with handpicked ingredients ensuring freshness and rich taste.</p>
+      </div>
+      <div class="card">
+        <h3>👨‍🍳 Expert Chefs</h3>
+        <p>Our professional chefs bring decades of experience to craft unforgettable meals.</p>
+      </div>
+      <div class="card">
+        <h3>🎉 All Occasions</h3>
+        <p>From intimate gatherings to grand celebrations, we cater to all your event needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Preview -->
+  <section class="menu-preview">
+    <h2>Our Specialties</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="/images/South-India-Famous-Food-1024x589.jpg" alt="South Indian Meals">
+        <h3>South Indian Meals</h3>
+      </div>
+      <div class="menu-item">
+        <img src="/images/image2-3.jpg" alt="North Indian Thali">
+        <h3>North Indian Thali</h3>
+      </div>
+      <div class="menu-item">
+        <img src="/images/top-view-traditional-indian-dessert_23-2150634513.jpg" alt="Special Sweets">
+        <h3>Special Sweets</h3>
+      </div>
+    </div>
+    <a href="menu.html" class="btn">View Full Menu</a>
+  </section>
+<div class="contact-details">
+    <h3>📞 Contact Details</h3>
+    <p><strong>Name:</strong> Srinivas GAJA</p>
+    <p><strong>Phone:</strong> 9908310372, 984887867</p>
+    <p><strong>Email:</strong> srimaheswar@gmail.com</p>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SRI MAHESWARA CATERING SERVICES | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

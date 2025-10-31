@@ -1,0 +1,194 @@
+/* ========== GLOBAL STYLES ========== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffdf7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ========== HEADER & NAVBAR ========== */
+header {
+  background:  #0059ff;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin: 5px 0 15px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #ffd700;
+  color: #1e3c72;
+}
+
+/* ========== CONTAINER & CATEGORIES ========== */
+.container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #1e3c72;
+  border-bottom: 3px solid #ffd700;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.category {
+  margin-bottom: 60px;
+  animation: fadeIn 0.8s ease;
+}
+
+/* ========== FOOD GRID ========== */
+.food-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.food-item {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-item:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #faf9f4;
+}
+
+.food-name {
+  font-weight: 600;
+  color: #2a2a2a;
+  letter-spacing: 0.5px;
+}
+
+/* ========== CONTACT FORM ========== */
+.contact-section {
+  background: linear-gradient(135deg, #f9f9f9, #f0f4ff);
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 0 auto 60px;
+  padding: 40px 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  border-color: #1e3c72;
+  outline: none;
+}
+
+.contact-section button {
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.contact-section button:hover {
+  background: #ffd700;
+  color: #1e3c72;
+  transform: scale(1.05);
+}
+
+
+    .contact-details {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      background: #fff3cd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      width: 80%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact-details h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .contact-details p {
+      margin: 5px 0;
+      color: #555;
+      font-size: 15px;
+    }
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
